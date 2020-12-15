@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Assignment 3</title>
+		
+        <link rel="stylesheet" type="text/css" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/top.js"></script>
+        <script src="./js/invoice.js"></script>
+		
+    </head>
+
+    <body onload="doShowAll()">
+        <!--Header area-->
+        <header>
+			<div class="container">
+				<nav>
+					<ul>
+                        <li><a href="./index.html">WELCOME</a></li>
+                        <li><a href="./Dogs.html">DOGS</a></li>
+                        <li><a href="./Breed.html">BREED</a></li>
+                        <li class="current"><a href="./Adopt.html">ADOPT</a></li>
+                        <li><a href="./Invoice.html">INVOICE</a></li>
+						<li><a href="./Login.html">LOG OUT</a></li>
+					</ul>
+				</nav>
+            </div>
+        </header>
+        <!--the area where it shows the header image-->
+        <!--<section id="showcase"></section>-->
+
+        <!--infomration area-->
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <h3>ADOPT NOW!</h3>
+                    <form name="AdoptionList">
+                        <td><label><input type="text" name="name" placeholder="Enter a breed of dog"required></label></td>
+                        <td><label>All dogs are $500 to adopt! <br> Please enter the Breed of dog for adoption <input type="text" name="data" value="500" style="display:none;"></label></td>
+                        <input type="button" value="ADOPT NOW"   onclick="SaveItem()" class="btn">
+                    </form>   
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                          <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Goldie, the Golden retriever! <br> <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+
+                     <!--Lab-->
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1511377465862-2579b9c87623?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                          <img src="https://images.unsplash.com/photo-1511377465862-2579b9c87623?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Blackie the black labrador <br> <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+
+                    <!--German Shepard-->
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1533569479222-559ba238a402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                          <img src="https://images.unsplash.com/photo-1533569479222-559ba238a402?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Buddy the German Shepard <br> <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+
+                    <!--Beagle-->
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1549388530-902bac6ec279?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80">
+                          <img src="https://images.unsplash.com/photo-1549388530-902bac6ec279?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Beast the beagle<br> <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+                    <!--Bulldog-->
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1531842477197-54acf89bff98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=701&q=80">
+                          <img src="https://images.unsplash.com/photo-1531842477197-54acf89bff98?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=701&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Frenchy the bulldog <br> <button onclick="topFunction()" id="btn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+                     <!--Terrier-->
+                    <div class="gallery">
+                        <a target="_blank" href="https://images.unsplash.com/photo-1549775924-433bdc7ea7a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80">
+                          <img src="https://images.unsplash.com/photo-1549775924-433bdc7ea7a9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=632&q=80" alt="Cinque Terre" width="315" >
+                        </a>
+                        <div class="desc">Tammy the Terrier <br> <button onclick="topFunction()" id="myBtn" title="Go to top" class="btn">Back to top!</button></div>
+                    </div>
+                    <br>
+                    <div id="items_table">
+                        <h2>Adoption List</h2>
+                        <center>
+                            <table id="list"></table>
+                            <p>  <center>
+                                <label><input type="button" value="Clear Adoption List" onclick="ClearAll()" class="btn"></label></center>
+
+                            
+                            </p>
+                        </center>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer>
+            <center>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-skype"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </center>
+        </footer>
+
+    </body>
+</html>

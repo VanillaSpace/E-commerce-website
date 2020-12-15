@@ -1,0 +1,367 @@
+* {
+	box-sizing: border-box;
+  }
+
+body{
+	
+	font-family:Helvetica, sans-serif;
+	background-color:#fff;
+	margin:0;
+	padding:0;
+	font-size:16px;
+}
+
+
+.container{
+	width:100%;
+	margin:auto;
+	overflow:hidden;
+}
+
+/* Header */
+header{
+	
+	background-color:black;
+	color:#fff;
+	padding-top:15px;
+	min-height:80px;
+}
+
+header a{
+	
+	color: #fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:20px;
+}
+
+ul{
+	margin:0;
+	padding:0;
+}
+
+header li{
+	
+	float:left;
+	display:inline;
+    padding:0 15px;
+    
+}
+
+
+nav{
+	
+	float:right;
+	margin-top:10px;
+}
+
+.current a{
+    border-radius: 15%;
+    padding: 2px;
+	color:white;
+    font-weight:bold;
+    background-color:#f79071;
+
+}
+
+.current a:hover{
+	color:#000000;
+	font-weight:bold;
+}
+
+
+
+/*Login Form*/
+
+#form1
+{
+ background-color:white;
+ width:380px;
+ margin-left:305px;
+ padding-bottom: 130px;
+}
+#form1 p
+{
+ color:#FA8258;
+ font-weight:bold;
+}
+#form1 #login_label
+{
+ text-align: center;
+ color:#FA8258;
+ padding:20px;
+ font-size:25px;
+ border-bottom:1px solid #E6E6E6;
+ font-weight:bold;
+}
+#form1 input[type="text"],input[type="password"]
+{
+ width:300px;
+ height:60px;
+ padding-left:10px;
+ margin-bottom:10px;
+ border:1px solid #D8D8D8;
+}
+#form1 input[type="submit"]
+{
+
+ color:white;
+ box-shadow:0px 3px 0px 0px #FE642E;
+ border-radius:3px;
+ font-weight:bold;
+ margin-top:10px;
+ width:300px;
+ height:40px;
+ background-color:#FA8258;
+ border:none;
+
+ 
+}
+
+
+p{
+	text-align: left;
+}
+
+p1{
+	font-size: 30px;
+	text-transform:uppercase;
+	
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+/*Invoice text area for grand tota, tax and adoption fee*/
+#adopt{
+	background-color:bisque;
+}
+
+#tax{
+	background-color:crimson;
+}
+
+#total{
+
+	text-transform:uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 5px;
+	background-color:orange;
+
+	
+}
+
+/*Contact Us*/
+#contactUs{
+	background-color: lightblue;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+#contactUs input{
+
+	width:20%;
+	padding:5px;
+}
+
+#contactUs textarea{
+	width:25%;
+	padding:5px;
+}
+
+#contactUs input[type="submit"]{
+	width:10%;
+}
+
+/*Info*/
+#boxes{
+	margin-top:20px;
+	
+}
+
+.box{
+    
+	font-size: large;
+	float:center;
+	width:100%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align:center;
+
+	min-height:350px;
+	margin:0 auto;
+	padding:0px;
+	width:995px;
+	
+}
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	/*width: 180px;*/
+	
+  }
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+}
+
+
+h1{
+    margin: 0 auto;
+    max-width: 800px;
+    font-size:2vw;
+    
+}
+
+h3{
+    margin: 0 auto;
+    max-width: 1000px;
+    font-size:5vw;
+}
+h4{
+    margin: 0 auto;
+    max-width: 900px;
+    font-size:4.5vw;
+}
+
+.button-1{
+	
+    background-color: transparent;
+    text-transform:uppercase;
+	border-color:#8f746c;
+	padding:4px 20px;
+	border:4;
+    height:37px;
+    width: 250px;
+    
+}
+.button-submit{
+	text-align: center;
+}
+
+.button-1:hover{
+    background-color:#8f746c;
+	color:white;
+	
+}
+
+/* finalized payment*/
+
+input:required,
+textarea:required {
+	border-color: red !important;
+  }
+
+.row {
+	-ms-flex-wrap: wrap; 
+	margin: 0 -16px;
+	text-align: left;
+	display: -ms-flexbox; 
+	display: flex;
+	
+  }
+  
+
+  .col-75 {
+	-ms-flex: 75%; 
+	flex: 75%;
+	border: 1px solid lightgrey;
+  }
+
+  .col-25 {
+	-ms-flex: 25%; 
+	flex: 25%;
+  }
+
+  .col-50 {
+	-ms-flex: 50%; 
+	flex: 50%;
+	
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+	padding: 0 16px;
+  }
+  
+  input[type=text] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+
+  input[class=inputCard] {
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+  }
+  
+  label {
+	margin-bottom: 10px;
+	display: block;
+  }
+  
+  .icon-container {
+	margin-bottom: 20px;
+	padding: 7px 0;
+	font-size: 24px;
+  }
+  
+  .btn {
+	background-color: #f0b986;
+	color: white;
+	padding: 12px;
+	margin: 10px 0;
+	border: none;
+	width: 100%;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 17px;
+  }
+  
+  .btn:hover {
+	background-color:orangered;
+  }
+  
+  a {
+	color: #2196F3;
+  }
+  
+  hr {
+	border: 1px solid lightgrey;
+  }
+  
+/* Footer */
+footer
+{
+    padding:20px;
+	min-height:350px;
+	margin-top: 10px;
+    background-image:url("../media/Footer-Banner.png");
+	background-position: 100%;
+	background-color:#000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Social Media */
+.fa {
+	padding: 10px;
+	width: 50px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	color: rgb(245, 120, 70);
+  }
+
+
+  
